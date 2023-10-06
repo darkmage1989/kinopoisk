@@ -1,7 +1,5 @@
-import { Url } from "url";
-
 export interface data {
-    id: string;
+    id: number;
   name: string;
   year: string;
   description: string;
@@ -9,7 +7,8 @@ export interface data {
   logo: string;
   poster: string;
   backdrop: string;
-  rating: string;
+  rating: number;
+  votes: number;
   genres: Array<string>;
   countries: Array<string>
 }

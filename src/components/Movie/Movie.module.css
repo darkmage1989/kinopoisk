@@ -6,8 +6,28 @@
   gap: 40px;
   padding-right: 300px;
   padding-left: 300px;
+  margin-bottom: 200px;
 }
 .poster {
   width: 200px;
   height: 300px;
+}
+.movie__star__icon{
+  width: 18px;
+  height: 18px;
+}
+.movie__block{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.movie__text__box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.movie__rating__box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
