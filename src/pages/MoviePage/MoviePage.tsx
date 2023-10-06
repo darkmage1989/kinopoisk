@@ -3,8 +3,9 @@ import { useGetMoveIdQuery, useGetPostsApiQuery } from "../../redux/apis/apis";
 import { useState } from "react";
 import { Alert, Button, Spinner } from "react-bootstrap";
 import styles from "./MoviePage.module.css";
-import classNames from 'classnames/bind';
-let cx = classNames.bind(styles);
+
+import MoviePageList from "../../components/MoviePageList/MoviePageList";
+
 
 const MoviePage = () => {
   const navigate = useNavigate();
@@ -14,8 +15,8 @@ const MoviePage = () => {
   const [show, setShow] = useState(true);
   if (isLoading) {
     return (
-      <Button  variant="primary" disabled>
-        <Spinner 
+      <Button className={styles.await} variant="primary" disabled>
+        <Spinner
           as="span"
           animation="grow"
           size="sm"
@@ -52,27 +53,8 @@ const MoviePage = () => {
       return <div>{error.message}</div>;
     }
   }
-  console.log(data.backdrop.url);
   return (
-    <div className={styles.movie__box}>
-      <div className={styles.movie__text}>
-        <h2>Название: {data.name}</h2>
-        <div className={cx('movie__text_row','movie__text')}>
-          <span>Cборы в мире: {data.fees.world.value} $</span>
-          <span>Рейтинг: {data.rating.kp.toFixed(1)}</span>
-        </div>
-        <span>Описание: {data.shortDescription}</span>
-      </div>
-
-      <img
-        className={styles.img__movie}
-        src={data.backdrop.url}
-        alt={data.backdrop.url}
-      />
-      <div className={styles.movie__text}>
-        <span>Подробное описание: {data.description}</span>
-      </div>
-    </div>
+    <MoviePageList data={data}/>
   );
 };
 

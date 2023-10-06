@@ -25,3 +25,18 @@
     justify-content: space-around;
     
 }
+.actors__block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 1000px;
+}
+.actor__box {
+    display: flex;
+    flex-direction: column;
+}
+.actor__img {
+    height: 300px;
+    width: 250px;
+}
