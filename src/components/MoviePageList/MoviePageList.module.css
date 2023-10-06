@@ -1,0 +1,43 @@
+.movie__box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.img__movie{
+    height: 60vh;
+    width: 60vw;
+}
+.movie__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+}
+.movie__title {
+    margin-top: 40px;
+    text-align: center;
+}
+.movie__text_row {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.actors__block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 1000px;
+}
+.actor__box {
+    display: flex;
+    flex-direction: column;
+}
+.actor__img {
+    height: 300px;
+    width: 250px;
+}

@@ -4,39 +4,5 @@
     justify-content: center;
     margin-top: 300px;
 }
-.img__movie{
-    height: 60vh;
-    width: 60vw;
-}
-.movie__box {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-}
-.movie__text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1000px;
-}
-.movie__text_row {
-    flex-direction: row;
-    justify-content: space-around;
-    
-}
-.actors__block{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    width: 1000px;
-}
-.actor__box {
-    display: flex;
-    flex-direction: column;
-}
-.actor__img {
-    height: 300px;
-    width: 250px;
-}
+
+
