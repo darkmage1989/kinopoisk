@@ -1,0 +1,13 @@
+.movie__box {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding-right: 300px;
+  padding-left: 300px;
+}
+.poster {
+  width: 200px;
+  height: 300px;
+}
