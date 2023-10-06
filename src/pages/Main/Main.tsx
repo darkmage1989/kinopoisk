@@ -5,7 +5,7 @@ import style from './Main.module.css'
 const Main = () => {
   const [movieName, setMovieName] = useState('')
   return ( <main className={style.main}>
-    <h1 style={{marginTop: '60px'}}>Что посмотреть</h1>
+    <h1 className={style.title} >Что посмотреть</h1>
     <FindInput setMovieName={setMovieName}/>
     <MoviesPage movieName={movieName}/>
     </main> );

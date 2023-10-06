@@ -1,10 +1,8 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import { url } from "inspector";
 import { data } from "../../interfaces/dataInterface";
 import style from "./Movie.module.css";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-
 interface MovieProps {
   data: Array<data>;
 }
@@ -13,7 +11,7 @@ const Movie = ({ data }: MovieProps) => {
   return (
     <div className={style.movie__box}>
       {data.map((movie) => (
-        <div key={movie.id}>
+        <div className={style.Movie__box} key={movie.id}>
           {movie.poster ? (
             <img
               className={style.poster}
@@ -40,7 +38,7 @@ const Movie = ({ data }: MovieProps) => {
 
               <span>Голосов: {movie.votes}</span>
             </div>
-            <span style={{ textAlign: "center" }}>{movie.name}</span>
+            <span style={{ textAlign: "center" }}>{movie.name? movie.name : 'Без назавния'}</span>
             <Button onClick={()=> navigate(`moviePage/${movie.id}`)} variant="primary" size="sm">
               Подробнее
             </Button>{" "}

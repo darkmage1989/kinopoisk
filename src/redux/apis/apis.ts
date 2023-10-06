@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-const Key: string | undefined = 'SQYRK65-QECMEJC-G6V9JJN-TP64PPD' // SQYRK65-QECMEJC-G6V9JJN-TP64PPD
+const Key: string | undefined = 'SQYRK65-QECMEJC-G6V9JJN-TP64PPD' 
 export const postsApi = createApi({ //ртк запрос на апи
   
   reducerPath: "postsApi",
